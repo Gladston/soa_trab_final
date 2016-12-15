@@ -18,7 +18,7 @@ declare function xf:CreditogeralParcialToCreditoCliente($resultadoParcialVerific
                     	if (fn:sum($resultadoParcialVerificaCreditoCliente1/ns1:credito/ns0:restricoes/ns0:restricao/ns0:valor) < 200) then
                     		(500 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno)
                     	else
-                    		if($resultadoParcialVerificaCreditoCliente1/ns1:indicaWhiteList) then
+                    		if($resultadoParcialVerificaCreditoCliente1/ns1:indicaWhiteList = xs:boolean('true')) then
                     			(900 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno)
                     		else
                     			(0 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno)

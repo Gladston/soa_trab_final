@@ -54,27 +54,15 @@
     </bpel:variable>
     
     
-    <bpel:variable name="parcialCreditoExterno"
-    	element="ns1:resultadoParcialVerificaCreditoCliente">
-    </bpel:variable>
-    <bpel:variable name="parcialCreditoInterno"
-    	element="ns1:resultadoParcialVerificaCreditoCliente">
-    </bpel:variable>
-    <bpel:variable name="parciaWhiteList"
-    	element="ns1:resultadoParcialVerificaCreditoCliente">
-    </bpel:variable>
+    
+    
+    
     <bpel:variable name="parcialCreditoCliente"
     	element="ns1:resultadoParcialVerificaCreditoCliente">
     </bpel:variable>
-    <bpel:variable name="creditoExterno"
-    	element="ns1:resultadoVerificaCreditoExterno">
-    </bpel:variable>
-    <bpel:variable name="creditoInterno"
-    	element="ns1:resultadoVerificaCreditoInterno">
-    </bpel:variable>
-    <bpel:variable name="whiteList"
-    	element="ns1:resultadoVerificaWhiteList">
-    </bpel:variable></bpel:variables>
+    
+    
+    </bpel:variables>
 
     <bpel:sequence>
         <bpel:receive partnerLink="CreditoGeralSplitJoin" operation="verificaCreditoCliente" variable="request" createInstance="yes">
@@ -86,141 +74,55 @@
         
         
         
-        <bpel:assign>
-        	<bpel:extensionAssignOperation>
-        		<trf:assign varName="parcialCreditoCliente">
-        			<trf:expr>
-        				<expr:xqueryText>&lt;resultadoParcialVerificaCreditoCliente&gt;
-	&lt;pessoa&gt;
-		&lt;id&gt;{ data($request.parameters/pessoa/id) }&lt;/id&gt;
-	    &lt;nome&gt;{ data($request.parameters/pessoa/nome) }&lt;/nome&gt;
-	    &lt;dataNascimento&gt;{ data($request.parameters/pessoa/dataNascimento) }&lt;/dataNascimento&gt;
-	    &lt;cnpj&gt;{ data($request.parameters/pessoa/cnpj) }&lt;/cnpj&gt;
-		&lt;telefone&gt;{ data($request.parameters/pessoa/telefone) }&lt;/telefone&gt;
-	&lt;/pessoa&gt;
-	&lt;scoreCreditoExterno&gt;0&lt;/scoreCreditoExterno&gt;
-	&lt;credito&gt;
-		&lt;restricoes&gt;
-			&lt;restricao&gt;
-				&lt;ds_restricao&gt;restricao_1&lt;/ds_restricao&gt;
-				&lt;valor&gt;0&lt;/valor&gt;
-			&lt;/restricao&gt;
-		&lt;/restricoes&gt;
-		
-		&lt;indicaWhiteList&gt;true&lt;/indicaWhiteList&gt;
-	&lt;/credito&gt;
-&lt;/resultadoParcialVerificaCreditoCliente&gt;</expr:xqueryText></trf:expr></trf:assign>
-        	</bpel:extensionAssignOperation>
-        </bpel:assign>
+        
         <bpel:flow bea:name="CreditoCliente">
         	<bpel:documentation>Credito do Cliente </bpel:documentation>
-        	<bpel:scope>
+        	<bpel:scope bea:name="CreditoExterno">
         		<bpel:sequence>
         			<bpel:assign>
         				<bpel:extensionAssignOperation>
         					<trf:assign varName="inputCreditoExterno.parameters">
         						<trf:expr>
-        							<expr:xqueryTransform>
-        								<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToCreditoExternoRequest"></expr:resource>
-        								<expr:param name="parametrosVerificaCreditoCliente1">
-        									<expr:path>$request.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
+        							<expr:xqueryText>$request.parameters</expr:xqueryText></trf:expr></trf:assign>
         				</bpel:extensionAssignOperation>
         			</bpel:assign>
         			<bpel:invoke operation="verificaCreditoExterno" partnerLink="verificaCreditoExternoService" inputVariable="inputCreditoExterno" outputVariable="outputCreditoExterno">
         				<rescon:invokeInfo>
         					<rescon:service isProxy="true" ref="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService"></rescon:service></rescon:invokeInfo></bpel:invoke>
-        			<bpel:assign>
-        				<bpel:extensionAssignOperation>
-        					<trf:assign varName="parcialCreditoExterno">
-        						<trf:expr>
-        							<expr:xqueryTransform>
-        								<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoExternoToParcialCreditoCliente"></expr:resource>
-        								<expr:param name="resultadoVerificaCreditoExterno1">
-        									<expr:path>$outputCreditoExterno.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
-        				</bpel:extensionAssignOperation>
-        			</bpel:assign>
-        			<bpel:assign>
-        				<bpel:extensionAssignOperation>
-        					<bpel:documentation></bpel:documentation>
-        					<trf:replace contents-only="true" varName="parcialCreditoCliente">
-        						<trf:location>
-        							<expr:xpathText>./ns1:scoreCreditoExterno</expr:xpathText></trf:location>
-        						<trf:expr>
-        							<expr:xqueryText>$parcialCreditoExterno/ns1:scoreCreditoExterno</expr:xqueryText></trf:expr></trf:replace>
-        				</bpel:extensionAssignOperation>
-        			</bpel:assign></bpel:sequence>
+        			
+        			</bpel:sequence>
         	</bpel:scope>
         	
-        <bpel:scope>
+        <bpel:scope bea:name="CreditoInterno">
 		<bpel:sequence>
 			<bpel:assign>
 				<bpel:extensionAssignOperation>
 					<trf:assign varName="inputCreditoInterno.parameters">
 						<trf:expr>
-							<expr:xqueryTransform>
-								<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToCreditoInternoRequest"></expr:resource>
-								<expr:param name="parametrosVerificaCreditoCliente1">
-									<expr:path>$request.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
+							<expr:xqueryText>$request.parameters</expr:xqueryText></trf:expr></trf:assign>
 				</bpel:extensionAssignOperation>
 			</bpel:assign>
 			<bpel:invoke operation="verificaCreditoInterno" partnerLink="verificaCreditoInternoService" inputVariable="inputCreditoInterno" outputVariable="outputCreditoInterno">
 				<rescon:invokeInfo>
 					<rescon:service isProxy="true" ref="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoInternoService"></rescon:service></rescon:invokeInfo></bpel:invoke>
-			<bpel:assign>
-				<bpel:extensionAssignOperation>
-					<trf:assign varName="parcialCreditoInterno">
-						<trf:expr>
-							<expr:xqueryTransform>
-								<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoInternoToParcialCreditoCliente"></expr:resource>
-								<expr:param name="resultadoVerificaCreditoInterno1">
-									<expr:path>$outputCreditoInterno.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
-				</bpel:extensionAssignOperation>
-			</bpel:assign>
-			<bpel:assign>
-				<bpel:extensionAssignOperation>
-					<trf:replace contents-only="false" varName="parcialCreditoCliente">
-						<trf:location>
-							<expr:xpathText>../ns1:credito</expr:xpathText></trf:location>
-						<trf:expr>
-							<expr:xqueryText>$parcialCreditoInterno/ns1:credito</expr:xqueryText></trf:expr></trf:replace>
-				</bpel:extensionAssignOperation>
-			</bpel:assign></bpel:sequence>
+			
+			</bpel:sequence>
         </bpel:scope>
-        <bpel:scope>
+        <bpel:scope bea:name="WhiteList">
         	<bpel:sequence>
         		<bpel:assign>
         			<bpel:extensionAssignOperation>
         				<trf:assign varName="inputWhiteList.parameters">
         					<trf:expr>
-        						<expr:xqueryTransform>
-        							<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToWhiteListRequest"></expr:resource>
-        							<expr:param name="parametrosVerificaCreditoCliente1">
-        								<expr:path>$request.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
+        						<expr:xqueryText>$request.parameters</expr:xqueryText></trf:expr></trf:assign>
         			</bpel:extensionAssignOperation>
         		</bpel:assign>
         		<bpel:invoke operation="verificaWhiteList" partnerLink="verificaWhiteListService" inputVariable="inputWhiteList" outputVariable="outputWhiteList">
         			<rescon:invokeInfo>
         				<rescon:service isProxy="true" ref="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaWhiteListService"></rescon:service></rescon:invokeInfo></bpel:invoke>
         		
-        		<bpel:assign>
-        			<bpel:extensionAssignOperation>
-        				<trf:assign varName="parciaWhiteList">
-        					<trf:expr>
-        						<expr:xqueryTransform>
-        							<expr:resource ref="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/WhiteListToParcialCreditoCliente"></expr:resource>
-        							<expr:param name="resultadoVerificaWhiteList1">
-        								<expr:path>$outputWhiteList.parameters</expr:path></expr:param></expr:xqueryTransform></trf:expr></trf:assign>
-        			</bpel:extensionAssignOperation>
-        		</bpel:assign>
-        		<bpel:assign>
-        			<bpel:extensionAssignOperation>
-        				<trf:replace contents-only="false" varName="parcialCreditoCliente">
-        					<trf:location>
-        						<expr:xpathText>./ns1:credito/glad:indicaWhiteList</expr:xpathText></trf:location>
-        					<trf:expr>
-        						<expr:xqueryText>$parciaWhiteList/ns1:credito/glad:indicaWhiteList</expr:xqueryText></trf:expr></trf:replace>
-        			</bpel:extensionAssignOperation>
-        		</bpel:assign></bpel:sequence>
+        		
+        		</bpel:sequence>
         </bpel:scope></bpel:flow>
         
         
