@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="86" version="2.0">
+<workbench progressCount="61" version="2.0">
 <workbenchAdvisor/>
 <window height="720" maximized="true" width="1356" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -13,7 +13,7 @@
 <coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.new.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="com.bea.alsb.process.flow.ui.editor.FlowMultipageEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -22,13 +22,13 @@
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.bea.alsb.ui.editors.proxy" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.bea.alsb.common.mapper.editors.MapperEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typeToolBarContribution" x="229" y="30"/>
+<coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typePlaceholder" x="229" y="30"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="132" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="144" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1477429894444" focus="true" label="Workspace - Oracle Service Bus">
@@ -40,25 +40,17 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.bea.alsb.ui.editors.proxy" name="InternalWhiteListProxyService.proxy" partName="InternalWhiteListProxyService.proxy" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy" title="InternalWhiteListProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy"/>
-</editor>
-<editor id="com.bea.alsb.ui.editors.proxy" name="CreditoGeralService.proxy" partName="CreditoGeralService.proxy" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy" title="CreditoGeralService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy"/>
-</editor>
-<editor id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="InternalWhiteListService.wsdl" partName="InternalWhiteListService.wsdl" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl" title="InternalWhiteListService.wsdl" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl"/>
-</editor>
-<editor id="com.bea.alsb.process.flow.ui.editor.FlowMultipageEditor" name="CreditoGeralSplitJoin.flow" partName="CreditoGeralSplitJoin.flow" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow" title="CreditoGeralSplitJoin.flow" tooltip="OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.bea.alsb.process.flow.ui.editor.FlowMultipageEditor" name="CreditoGeralSplitJoin.flow" partName="CreditoGeralSplitJoin.flow" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow" title="CreditoGeralSplitJoin.flow" tooltip="OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow"/>
 </editor>
-<editor activePart="true" focus="true" id="com.bea.alsb.ui.editors.proxy" name="verificaCreditoExternoService.proxy" partName="verificaCreditoExternoService.proxy" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy" title="verificaCreditoExternoService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="ResultadoCadastraPessoaTeste.xml" partName="ResultadoCadastraPessoaTeste.xml" path="/home/puc/workspace/OSB_Gladston/EBS/Pessoa/xsd/ResultadoCadastraPessoaTeste.xml" title="ResultadoCadastraPessoaTeste.xml" tooltip="OSB_Gladston/EBS/Pessoa/xsd/ResultadoCadastraPessoaTeste.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/EBS/Pessoa/xsd/ResultadoCadastraPessoaTeste.xml"/>
+</editor>
+<editor id="com.bea.alsb.ui.editors.proxy" name="verificaCreditoExternoService.proxy" partName="verificaCreditoExternoService.proxy" path="/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy" title="verificaCreditoExternoService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy"/>
 </editor>
 </editors>
@@ -67,17 +59,19 @@
 <viewState/>
 </view>
 <view id="oracle.eclipse.tools.adf.debugger.ui.AdfElEvaluatorView" partName="ADF EL Evaluator"/>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<view id="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" partName="Expression Functions">
 <viewState/>
 </view>
-<view id="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" partName="Expression Functions">
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
 <view id="com.bea.alsb.common.mapper.views.ConstraintsView" partName="Constraints">
 <viewState/>
 </view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
+<viewState activate="true" allSessions="true" column2="1134" column3="150" column4="231" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -91,6 +85,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -112,27 +109,32 @@
 </view>
 <view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
-<filters>&#x0A;<filter element="*.class" isEnabled="true"/>
+<filters>
+<filter element="*.class" isEnabled="true"/>
 <filter element=".*" isEnabled="false"/>
 <filter element="*.pyc" isEnabled="true"/>
 <filter element="*.class" isEnabled="true"/>
 <filter element="*.pyo" isEnabled="true"/>
 </filters>
-<expanded>&#x0A;<element path="/OSB_Gladston"/>
+<expanded>
+<element path="/OSB_Gladston"/>
 <element path="/OSB_Gladston/ServicosNegocio"/>
 <element path="/OSB_Gladston/ServicosNegocio/Credito"/>
 <element path="/OSB_Gladston/ServicosNegocio/Credito/Resources"/>
+<element path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations"/>
+<element path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral"/>
 </expanded>
-<selection>&#x0A;<element path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations"/>
+<selection>
+<element path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/InternalWhiteListResponseToWhiListResponse.xq"/>
 </selection>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (7 items)"/>
+<category IMemento.internal.id="Errors (2 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="679" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="679" org.eclipse.ui.ide.pathField="625" org.eclipse.ui.ide.resourceField="242" org.eclipse.ui.ide.severityAndDescriptionField="755"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -149,7 +151,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.debug.ui.VariableView" activePerspective="com.bea.alsb.ui.perspectives.aqualogic">
+<perspectives activePart="org.eclipse.wst.server.ui.ServersView" activePerspective="com.bea.alsb.ui.perspectives.aqualogic">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.help.internal.ui.HelpActionSet"/>
@@ -290,17 +292,13 @@
 <view id="com.bea.workshop.common.ui.CorePaletteView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.wst.server.ui.ServersView" style="0">
-<fastViews>
-<view id="com.bea.alsb.ui.views.ReferenceView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.PropertySheet" ratio="0.33549222"/>
-<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.2991914"/>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2991914"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="com.bea.alsb.ui.views.ReferenceView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
@@ -319,18 +317,26 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20324777" ratioLeft="388" ratioRight="1521" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.778784" ratioLeft="602" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="com.bea.alsb.ui.views.ReferenceView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<info folder="true" part="bottom" ratio="0.68236876" ratioLeft="507" ratioRight="236" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
+<page content="com.bea.alsb.ui.views.ReferenceView" label="References"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.8596838" ratioLeft="1305" ratioRight="213" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<folder activePageID="com.bea.workshop.common.ui.CorePaletteView" appearance="2" expanded="2">
 <page content="com.bea.workshop.common.ui.CorePaletteView" label="Design Palette"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
@@ -386,35 +392,56 @@
 <view id="com.bea.alsb.common.mapper.views.TargetExpression"/>
 <view id="com.bea.alsb.common.mapper.views.ConstraintsView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496274" ratioLeft="1006" ratioRight="336" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496274" ratioLeft="1006" ratioRight="336" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19970194" ratioLeft="268" ratioRight="1074" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomFrame" ratio="0.608769" ratioLeft="361" ratioRight="232" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="com.bea.alsb.common.mapper.views.TargetExpression" appearance="2" expanded="2">&#x0A;<page content="com.bea.alsb.common.mapper.views.TargetExpression" label="Target Expression"/>
+<info part="org.eclipse.ui.editorss" ratio="0.1838659" ratioLeft="351" ratioRight="1558" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomFrame" ratio="0.69987065" ratioLeft="541" ratioRight="232" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="com.bea.alsb.common.mapper.views.TargetExpression" label="Target Expression"/>
 <page content="com.bea.alsb.common.mapper.views.ConstraintsView" label="Constraints"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="middleLeft" ratio="0.3288364" ratioLeft="195" ratioRight="398" relationship="4" relative="topLeft">&#x0A;<folder activePageID="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" appearance="2" expanded="2">&#x0A;<page content="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" label="Expression Functions"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="middleLeft" ratio="0.3288364" ratioLeft="195" ratioRight="398" relationship="4" relative="topLeft">
+<folder activePageID="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" appearance="2" expanded="2">
+<page content="com.bea.alsb.common.xquery.ui.views.FunctionsPalette" label="Expression Functions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="199" ratioRight="199" relationship="4" relative="middleLeft">&#x0A;<folder activePageID="com.bea.alsb.common.mapper.views.DataPalette" appearance="2" expanded="2">&#x0A;<page content="com.bea.alsb.common.mapper.views.DataPalette" label="Expression Variables"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="199" ratioRight="199" relationship="4" relative="middleLeft">
+<folder activePageID="com.bea.alsb.common.mapper.views.DataPalette" appearance="2" expanded="2">
+<page content="com.bea.alsb.common.mapper.views.DataPalette" label="Expression Variables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -467,6 +494,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="oracle.eclipse.tools.adf.debugger.ui.AdfStructureView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
@@ -497,12 +525,12 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.75" ratioLeft="579" ratioRight="193" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="oracle.eclipse.tools.adf.debugger.ui.AdfStructureView" label="ADF Structure and Data"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
@@ -511,6 +539,7 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -525,7 +554,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="oracle.eclipse.tools.adf.debugger.ui.AdfElEvaluatorView" label="ADF EL Evaluator"/>
@@ -545,80 +574,94 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoInternoService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" path="/OSB_Gladston/ServicosNegocio/Pessoa/Services/Business/DesativaPessoaBusinessService.biz"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Pessoa/Services/Proxies/DesativaPessoaProxyService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditLegacyResponseToCreditoInternoResponse.xq"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/a_a.xq"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoInternoService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/SerasaProxyService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaWhiteListService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Business/CreditLegacyBusinessService.biz"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Business/InternalWhiteListBusinessService.biz"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/OSB_Gladston/EBS/Credito/wsdl/CreditoService.wsdl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralToCreditoCliente.xq"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.process.flow.ui.editor.FlowMultipageEditor" path="/OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/OSB_Gladston/EBS/Credito/xsd/ParametrosCreditoGeral.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/OSB_Gladston/EBS/Credito/xsd/ParametrosCreditoGeral.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/OSB_Gladston/EBS/Credito/xsd/ParametrosCredito.xsd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditLegacyResponseToCreditoInternoResponse.xq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoExternoToParcialCreditoCliente.xq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoInternoToParcialCreditoCliente.xq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/WhiteListToParcialCreditoCliente.xq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/InternalWhiteListResponseToWhiListResponse.xq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/RequestToParcialPessoa.xq"/>
 </editors>
-<item historyLabel="CreditLegacyProxyService.proxy" index="1"/>
-<item historyLabel="verificaCreditoInternoService.proxy" index="0"/>
-<item historyLabel="CreditLegacyProxyService.proxy" index="1"/>
-<item historyLabel="DesativaPessoaBusinessService.biz" index="2"/>
-<item historyLabel="DesativaPessoaProxyService.proxy" index="3"/>
-<item historyLabel="CreditLegacyResponseToCreditoInternoResponse.xq" index="4"/>
-<item historyLabel="a_a.xq" index="5"/>
-<item historyLabel="CreditLegacyResponseToCreditoInternoResponse.xq" index="4"/>
-<item historyLabel="a_a.xq" index="5"/>
-<item historyLabel="verificaCreditoInternoService.proxy" index="0"/>
-<item historyLabel="a_a.xq" index="5"/>
-<item historyLabel="verificaCreditoInternoService.proxy" index="6"/>
-<item historyLabel="SerasaProxyService.proxy" index="7"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="CreditLegacyBusinessService.biz" index="10"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="InternalWhiteListProxyService.proxy" index="8"/>
-<item historyLabel="InternalWhiteListBusinessService.biz" index="12"/>
-<item historyLabel="InternalWhiteListService.wsdl" index="13"/>
-<item historyLabel="CreditoService.wsdl" index="14"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoService.wsdl" index="14"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="verificaWhiteListService.proxy" index="9"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="CreditoGeralSplitJoin.flow" index="15"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item historyLabel="CreditoGeralSplitJoin.flow" index="15"/>
-<item historyLabel="CreditoGeralService.proxy" index="11"/>
-<item active="true" historyLabel="verificaCreditoExternoService.proxy" index="16"/>
+<item historyLabel="ParametrosCredito.xsd" index="4">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="ParametrosCreditoGeral.xsd" index="3">
+<position/>
+</item>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralToCreditoCliente.xq" index="0"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoInternoToParcialCreditoCliente.xq" index="7"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="WhiteListToParcialCreditoCliente.xq" index="8"/>
+<item historyLabel="InternalWhiteListResponseToWhiListResponse.xq" index="9"/>
+<item historyLabel="WhiteListToParcialCreditoCliente.xq" index="8"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="ParametrosCreditoGeral.xsd" index="3">
+<position/>
+</item>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="ParametrosCredito.xsd" index="4">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditLegacyResponseToCreditoInternoResponse.xq" index="5"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditLegacyProxyService.proxy" index="10"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="verificaCreditoExternoService.proxy" index="11"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="RequestToParcialPessoa.xq" index="12"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="RequestToParcialPessoa.xq" index="12"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="ParametrosCreditoGeral.xsd" index="2">
+<position info="not_deleted" x="39" y="0"/>
+</item>
+<item historyLabel="ParametrosCreditoGeral.xsd" index="3">
+<position info="not_deleted" x="1027" y="38"/>
+</item>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoInternoToParcialCreditoCliente.xq" index="7"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoInternoToParcialCreditoCliente.xq" index="7"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoInternoToParcialCreditoCliente.xq" index="7"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="CreditoExternoToParcialCreditoCliente.xq" index="6"/>
+<item historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
+<item historyLabel="WhiteListToParcialCreditoCliente.xq" index="8"/>
+<item active="true" historyLabel="CreditoGeralSplitJoin.flow" index="1"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -632,50 +675,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="WhiteListToParcialCreditoCliente.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/WhiteListToParcialCreditoCliente.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/WhiteListToParcialCreditoCliente.xq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="CreditoExternoToParcialCreditoCliente.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoExternoToParcialCreditoCliente.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoExternoToParcialCreditoCliente.xq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="CreditoInternoToParcialCreditoCliente.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoInternoToParcialCreditoCliente.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoInternoToParcialCreditoCliente.xq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="ParametrosCreditoGeral.xsd" tooltip="OSB_Gladston/EBS/Credito/xsd/ParametrosCreditoGeral.xsd">
+<persistable path="/OSB_Gladston/EBS/Credito/xsd/ParametrosCreditoGeral.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="RequestToParcialPessoa.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/RequestToParcialPessoa.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/RequestToParcialPessoa.xq"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="verificaCreditoExternoService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy">
 <persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaCreditoExternoService.proxy"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.process.flow.ui.editor.FlowMultipageEditor" name="CreditoGeralSplitJoin.flow" tooltip="OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/CreditoGeralSplitJoin.flow"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="CreditoService.wsdl" tooltip="OSB_Gladston/EBS/Credito/wsdl/CreditoService.wsdl">
-<persistable path="/OSB_Gladston/EBS/Credito/wsdl/CreditoService.wsdl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="InternalWhiteListService.wsdl" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/InternalWhiteListService.wsdl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" name="InternalWhiteListBusinessService.biz" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Business/InternalWhiteListBusinessService.biz">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Business/InternalWhiteListBusinessService.biz"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="CreditoGeralService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" name="CreditLegacyBusinessService.biz" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Business/CreditLegacyBusinessService.biz">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Business/CreditLegacyBusinessService.biz"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="verificaWhiteListService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaWhiteListService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/Operations/verificaWhiteListService.proxy"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="InternalWhiteListProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/InternalWhiteListProxyService.proxy"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="SerasaProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/SerasaProxyService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/SerasaProxyService.proxy"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="a_a.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/a_a.xq">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/a_a.xq"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="CreditLegacyProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="CreditLegacyResponseToCreditoInternoResponse.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditLegacyResponseToCreditoInternoResponse.xq">
 <persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditLegacyResponseToCreditoInternoResponse.xq"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="DesativaPessoaProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Pessoa/Services/Proxies/DesativaPessoaProxyService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Pessoa/Services/Proxies/DesativaPessoaProxyService.proxy"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="InternalWhiteListResponseToWhiListResponse.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/InternalWhiteListResponseToWhiListResponse.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/InternalWhiteListResponseToWhiListResponse.xq"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.biz" name="DesativaPessoaBusinessService.biz" tooltip="OSB_Gladston/ServicosNegocio/Pessoa/Services/Business/DesativaPessoaBusinessService.biz">
-<persistable path="/OSB_Gladston/ServicosNegocio/Pessoa/Services/Business/DesativaPessoaBusinessService.biz"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Credito.xsd" tooltip="OSB_Gladston/ModeloCanonico/MC/Credito.xsd">
+<persistable path="/OSB_Gladston/ModeloCanonico/MC/Credito.xsd"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.ui.editors.proxy" name="CreditLegacyProxyService.proxy" tooltip="OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy">
-<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditLegacyProxyService.proxy"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="ParametrosCredito.xsd" tooltip="OSB_Gladston/EBS/Credito/xsd/ParametrosCredito.xsd">
+<persistable path="/OSB_Gladston/EBS/Credito/xsd/ParametrosCredito.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="VerificaCreditoExternoToSerasa.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/VerificaCreditoExternoToSerasa.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/VerificaCreditoExternoToSerasa.xq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.bea.alsb.common.mapper.editors.MapperEditor" name="CreditoGeralToCreditoCliente.xq" tooltip="OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralToCreditoCliente.xq">
+<persistable path="/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralToCreditoCliente.xq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="ParametrosBuscaPessoaTeste.xml" tooltip="OSB_Gladston/EBS/Pessoa/xsd/ParametrosBuscaPessoaTeste.xml">
+<persistable path="/OSB_Gladston/EBS/Pessoa/xsd/ParametrosBuscaPessoaTeste.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="ParametrosPessoa.xsd" tooltip="OSB_Gladston/EBS/Pessoa/xsd/ParametrosPessoa.xsd">
+<persistable path="/OSB_Gladston/EBS/Pessoa/xsd/ParametrosPessoa.xsd"/>
 </file>
 </mruList>
 </workbench>

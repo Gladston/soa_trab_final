@@ -1,0 +1,24 @@
+xquery version "1.0" encoding "UTF-8";
+(:: pragma bea:global-element-parameter parameter="$resultadoVerificaCreditoExterno1" element="ns1:resultadoVerificaCreditoExterno" location="../../../../../EBS/Credito/xsd/ParametrosCredito.xsd" ::)
+(:: pragma bea:global-element-parameter parameter="$resultadoVerificaCreditoInterno1" element="ns1:resultadoVerificaCreditoInterno" location="../../../../../EBS/Credito/xsd/ParametrosCredito.xsd" ::)
+(:: pragma bea:global-element-parameter parameter="$resultadoVerificaWhiteList1" element="ns1:resultadoVerificaWhiteList" location="../../../../../EBS/Credito/xsd/ParametrosCredito.xsd" ::)
+(:: pragma bea:global-element-return element="ns1:resultadoVerificaCreditoCliente" location="../../../../../EBS/Credito/xsd/ParametrosCreditoGeral.xsd" ::)
+
+declare namespace xf = "http://tempuri.org/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralToCreditoCliente/";
+declare namespace ns1 = "http://pucminas.br/SN/Credito";
+declare namespace ns0 = "http://pucminas.br/MC/SOA/Gladston";
+
+declare function xf:CreditoGeralToCreditoCliente($resultadoVerificaCreditoExterno1 as element(ns1:resultadoVerificaCreditoExterno),
+    $resultadoVerificaCreditoInterno1 as element(ns1:resultadoVerificaCreditoInterno),
+    $resultadoVerificaWhiteList1 as element(ns1:resultadoVerificaWhiteList))
+    as element(ns1:resultadoVerificaCreditoCliente) {
+        <ns1:resultadoVerificaCreditoCliente/>
+};
+
+declare variable $resultadoVerificaCreditoExterno1 as element(ns1:resultadoVerificaCreditoExterno) external;
+declare variable $resultadoVerificaCreditoInterno1 as element(ns1:resultadoVerificaCreditoInterno) external;
+declare variable $resultadoVerificaWhiteList1 as element(ns1:resultadoVerificaWhiteList) external;
+
+xf:CreditoGeralToCreditoCliente($resultadoVerificaCreditoExterno1,
+    $resultadoVerificaCreditoInterno1,
+    $resultadoVerificaWhiteList1)

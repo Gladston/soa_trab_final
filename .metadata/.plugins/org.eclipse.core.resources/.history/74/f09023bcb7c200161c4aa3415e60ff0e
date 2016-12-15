@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://pucminas.br/SN/Credito" 
+	xmlns:tns="http://pucminas.br/SN/Credito" 
+	elementFormDefault="qualified"
+	xmlns:cab="http://pucminas.br/MC/SOA/Gladston">
+
+	<import namespace="http://pucminas.br/MC/SOA/Gladston" schemaLocation="../../../ModeloCanonico/MC/Pessoa.xsd" />
+	<import namespace="http://pucminas.br/MC/SOA/Gladston" schemaLocation="../../../ModeloCanonico/MC/Credito.xsd" />
+	<import namespace="http://pucminas.br/MC/SOA/Gladston" schemaLocation="../../../ModeloCanonico/MC/MensagemRetorno.xsd" />
+
+
+	<element name="parametrosVerificaCreditoCliente">
+		<complexType>
+			<sequence>
+				<element name="pessoa" type="cab:Pessoa" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="resultadoVerificaCreditoCliente">
+		<complexType>
+			<sequence>
+				<element name="score" type="integer" />
+				<element name="pessoa" type="cab:Pessoa" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="resultadoParcialVerificaCreditoCliente">
+		<complexType>
+			<sequence>
+				<element name="scoreCreditoExterno" type="integer" />
+				<element name="pessoa" type="cab:Pessoa" />
+				<element name="credito" type="cab:Credito" />
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

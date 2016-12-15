@@ -1,0 +1,29 @@
+(:: pragma bea:global-element-parameter parameter="$resultadoParcialVerificaCreditoCliente1" element="ns1:resultadoParcialVerificaCreditoCliente" location="../../../../../EBS/Credito/xsd/ParametrosCreditoGeral.xsd" ::)
+(:: pragma bea:global-element-return element="ns1:resultadoVerificaCreditoCliente" location="../../../../../EBS/Credito/xsd/ParametrosCreditoGeral.xsd" ::)
+
+declare namespace ns1 = "http://pucminas.br/SN/Credito";
+declare namespace ns0 = "http://pucminas.br/MC/SOA/Gladston";
+declare namespace xf = "http://tempuri.org/OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditogeralParcialToCreditoCliente/";
+
+declare function xf:CreditogeralParcialToCreditoCliente($resultadoParcialVerificaCreditoCliente1 as element(ns1:resultadoParcialVerificaCreditoCliente))
+    as element(ns1:resultadoVerificaCreditoCliente) {
+        <ns1:resultadoVerificaCreditoCliente>
+            <ns1:pessoa>
+                <ns0:cnpj>{ data($resultadoParcialVerificaCreditoCliente1/ns1:pessoa/ns0:cnpj) }</ns0:cnpj>
+            </ns1:pessoa>
+            {if (fn:count(data($resultadoParcialVerificaCreditoCliente1/ns1:credito/ns0:restricoes/ns0:restricao) > 3)) then
+				<ns1:score>{xs:double((0 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno))}</ns1:score>
+			else
+				if (fn:sum($resultadoParcialVerificaCreditoCliente1/ns1:credito/ns0:restricoes/ns0:restricao/ns0:valor) < 200) then
+					<ns1:score>{xs:double((500 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno))}</ns1:score>
+				else
+					if($resultadoParcialVerificaCreditoCliente1/ns1:indicaWhiteList = true) then
+						<ns1:score>{xs:double((900 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno))}</ns1:score>
+					else
+						<ns1:score>{xs:double((0 + $resultadoParcialVerificaCreditoCliente1/ns1:scoreCreditoExterno))}</ns1:score>}
+        </ns1:resultadoVerificaCreditoCliente>
+};
+
+declare variable $resultadoParcialVerificaCreditoCliente1 as element(ns1:resultadoParcialVerificaCreditoCliente) external;
+
+xf:CreditogeralParcialToCreditoCliente($resultadoParcialVerificaCreditoCliente1)

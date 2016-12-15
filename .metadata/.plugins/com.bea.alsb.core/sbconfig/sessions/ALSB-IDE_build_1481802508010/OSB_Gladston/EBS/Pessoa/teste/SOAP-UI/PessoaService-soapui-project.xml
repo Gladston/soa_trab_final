@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:xmlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:xml-content><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="eedf41e8-307f-4bed-aaf0-1fd3d9e07a65" activeEnvironment="Default" name="PessoaService" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]]]>><![CDATA[</con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="96c5d2c6-a556-4dad-bfd5-d74d67d2a8e6" wsaVersion="NONE" name="PessoaServiceSOAP" type="wsdl" bindingName="{http://pucminas.br/SN/PessoaService/Gladston}PessoaServiceSOAP" soapVersion="1_1" anonymous="optional" definition="file:/home/puc/workspace/OSB_Renan/EBS/Pessoa/wsdl/PessoaService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/home/puc/workspace/OSB_Renan/EBS/Pessoa/wsdl/PessoaService.wsdl"><con:part><con:url>file:/home/puc/workspace/OSB_Renan/EBS/Pessoa/wsdl/PessoaService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PessoaService" targetNamespace="http://pucminas.br/SN/PessoaService/Gladston" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://pucminas.br/SN/PessoaService/Gladston" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:cab="http://pucminas.br/MC/SOA/Gladston" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://pucminas.br/SN/PessoaService/Gladston">
+      <xsd:import namespace="http://pucminas.br/SN/Pessoa" schemaLocation="../xsd/ParametrosPessoa.xsd"/>
+      <xsd:import namespace="http://pucminas.br/MC/SOA/Gladston" schemaLocation="../../../ModeloCanonico/MC/PucminasFault.xsd"/>
+      <xsd:element name="pucminasFault" type="cab:PucminasFault"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="pucminasFault">
+    <wsdl:part element="tns:pucminasFault" name="fault"/>
+  </wsdl:message>
+  <wsdl:message name="buscaPessoaRequest">
+    <wsdl:part element="pes:parametrosBuscaPessoa" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="buscaPessoaResponse">
+    <wsdl:part element="pes:resultadoBuscaPessoa" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="cadastraPessoaRequest">
+    <wsdl:part element="pes:parametrosCadastraPessoa" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="cadastraPessoaResponse">
+    <wsdl:part element="pes:resultadoCadastraPessoa" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="desastivaPessoaRequest">
+    <wsdl:part element="pes:parametrosDesastivaPessoa" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="PessoaService">
+    <wsdl:operation name="buscaPessoa">
+      <wsdl:input message="tns:buscaPessoaRequest"/>
+      <wsdl:output message="tns:buscaPessoaResponse"/>
+      <wsdl:fault name="pucminasFault" message="tns:pucminasFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="cadastraPessoa">
+      <wsdl:input message="tns:cadastraPessoaRequest"/>
+      <wsdl:output message="tns:cadastraPessoaResponse"/>
+      <wsdl:fault name="pucminasFault" message="tns:pucminasFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="desastivaPessoa">
+      <wsdl:input message="tns:desastivaPessoaRequest"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PessoaServiceSOAP" type="tns:PessoaService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="buscaPessoa">
+      <soap:operation soapAction="http://pucminas.br/SN/PessoaService/BuscaPessoa"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="pucminasFault">
+        <soap:fault name="pucminasFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cadastraPessoa">
+      <soap:operation soapAction="http://pucminas.br/SN/PessoaService/CadastraPessoa"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="pucminasFault">
+        <soap:fault name="pucminasFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="desastivaPessoa">
+      <soap:operation soapAction="http://pucminas.br/SN/PessoaService/DesastivaPessoa"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PessoaService">
+    <wsdl:port binding="tns:PessoaServiceSOAP" name="PessoaServiceSOAP">
+      <soap:address location="http://pucminas.br/SOA/Pessoa"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]]]>><![CDATA[</con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:/home/puc/workspace/OSB_Renan/EBS/Pessoa/xsd/ParametrosPessoa.xsd</con:url><con:content><![CDATA[<schema targetNamespace="http://pucminas.br/SN/Pessoa" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pucminas.br/SN/Pessoa" xmlns:cab="http://pucminas.br/MC/SOA/Gladston">
+  <import namespace="http://pucminas.br/MC/SOA/Gladston" schemaLocation="../../../ModeloCanonico/MC/Pessoa.xsd"/>
+  <element name="parametrosBuscaPessoa">
+    <complexType>
+      <sequence>
+        <element name="pessoa" type="cab:Pessoa"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="resultadoBuscaPessoa">
+    <complexType>
+      <sequence>
+        <element name="pessoa" type="cab:Pessoa"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="parametrosCadastraPessoa">
+    <complexType>
+      <sequence>
+        <element name="pessoa" type="cab:Pessoa"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="resultadoCadastraPessoa">
+    <complexType>
+      <sequence>
+        <element name="pessoa" type="cab:Pessoa"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="parametrosDesastivaPessoa ">
+    <complexType>
+      <sequence>
+        <element name="pessoa" type="cab:Pessoa"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]]]>><![CDATA[</con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:/home/puc/workspace/OSB_Renan/ModeloCanonico/MC/Pessoa.xsd</con:url><con:content><![CDATA[<schema targetNamespace="http://pucminas.br/MC/SOA/Gladston" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pucminas.br/MC/SOA/Gladston">
+  <complexType name="Pessoa">
+    <sequence>
+      <element name="id" type="integer"/>
+      <element name="nome" type="string"/>
+      <element name="dataNascimento" type="date"/>
+      <element name="cnpj" type="string"/>
+      <element name="telefone" type="integer"/>
+    </sequence>
+  </complexType>
+</schema>]]]]>><![CDATA[</con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:/home/puc/workspace/OSB_Renan/ModeloCanonico/MC/PucminasFault.xsd</con:url><con:content><![CDATA[<schema targetNamespace="http://pucminas.br/MC/SOA/Gladston" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pucminas.br/MC/SOA/Gladston">
+  <complexType name="PucminasFault">
+    <sequence>
+      <element name="codigo" type="integer"/>
+      <element name="descricao" type="string"/>
+      <element name="detalhe" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="pucminasFault" type="tns:PucminasFault"/>
+</schema>]]]]>><![CDATA[</con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://puc-VirtualBox:8091/mockPessoaServiceSOAP</con:endpoint><con:endpoint>http://pucminas.br/SOA/Pessoa</con:endpoint></con:endpoints><con:operation id="094853aa-bd37-4943-bdd0-310197b05273" isOneWay="false" action="http://pucminas.br/SN/PessoaService/BuscaPessoa" name="buscaPessoa" bindingOperationName="buscaPessoa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="30b48e42-9c04-40bf-a720-51b2a827dac2" name="RequestBuscaPessoa"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://puc-VirtualBox:8091/mockPessoaServiceSOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:bih="http://pucminas.br/MC/SOA/Gladston">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pes:parametrosBuscaPessoa>
+         <pes:pessoa>
+            <bih:id>?</bih:id>
+            <bih:nome>?</bih:nome>
+            <bih:dataNascimento>?</bih:dataNascimento>
+            <bih:cnpj>?</bih:cnpj>
+            <bih:telefone>?</bih:telefone>
+         </pes:pessoa>
+      </pes:parametrosBuscaPessoa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/BuscaPessoa"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="05246335-8df9-4f8b-9f02-9fed3891d3c0" isOneWay="false" action="http://pucminas.br/SN/PessoaService/CadastraPessoa" name="cadastraPessoa" bindingOperationName="cadastraPessoa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="15f34819-735e-4b2f-a83d-f41739cd22a4" name="RequestCadastraPessoa"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://puc-VirtualBox:8091/mockPessoaServiceSOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:bih="http://pucminas.br/MC/SOA/Gladston">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pes:parametrosCadastraPessoa>
+         <pes:pessoa>
+            <bih:id>?</bih:id>
+            <bih:nome>?</bih:nome>
+            <bih:dataNascimento>?</bih:dataNascimento>
+            <bih:cnpj>?</bih:cnpj>
+            <bih:telefone>?</bih:telefone>
+         </pes:pessoa>
+      </pes:parametrosCadastraPessoa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/CadastraPessoa"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b0826be1-30b2-4e3a-8c89-823166b9c049" isOneWay="false" action="http://pucminas.br/SN/PessoaService/DesastivaPessoa" name="desastivaPessoa" bindingOperationName="desastivaPessoa" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b446f0a8-0d68-49b2-a201-d6d1acee7a88" name="RequestDesativaPessoa"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://puc-VirtualBox:8091/mockPessoaServiceSOAP</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:bih="http://pucminas.br/MC/SOA/Gladston">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pes:parametrosDesastivaPessoa>
+         <pes:pessoa>
+            <bih:id>?</bih:id>
+            <bih:nome>?</bih:nome>
+            <bih:dataNascimento>?</bih:dataNascimento>
+            <bih:cnpj>?</bih:cnpj>
+            <bih:telefone>?</bih:telefone>
+         </pes:pessoa>
+      </pes:parametrosDesastivaPessoa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/DesastivaPessoa"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:mockService id="1f25f2dc-9d76-45be-91ec-2eb6abcffb09" port="8091" path="/mockPessoaServiceSOAP" host="puc-VirtualBox" name="PessoaServiceSOAP MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="buscaPessoa" id="b9ff060c-3a34-44cc-ba6e-8208ce801be7" interface="PessoaServiceSOAP" operation="buscaPessoa"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="ResponseBuscaPessoa" id="70581c72-5be8-4a2c-a877-0ca2df53d5e8" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:bih="http://pucminas.br/MC/SOA/Gladston">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pes:resultadoBuscaPessoa>
+         <pes:pessoa>
+            <bih:id>12</bih:id>
+            <bih:nome>Renan</bih:nome>
+            <bih:dataNascimento>1990-02-13</bih:dataNascimento>
+            <bih:cnpj>000000000000</bih:cnpj>
+            <bih:telefone>319999999</bih:telefone>
+         </pes:pessoa>
+      </pes:resultadoBuscaPessoa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/BuscaPessoa"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="cadastraPessoa" id="23bb6af6-44d1-4986-85c4-b5d291866fb1" interface="PessoaServiceSOAP" operation="cadastraPessoa"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="ResponseCadastraPessoa" id="b27784ca-61dd-4d71-9c01-772868403aba" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pes="http://pucminas.br/SN/Pessoa" xmlns:bih="http://pucminas.br/MC/SOA/Gladston">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pes:resultadoCadastraPessoa>
+         <pes:pessoa>
+            <bih:id>12</bih:id>
+            <bih:nome>Renan</bih:nome>
+            <bih:dataNascimento>1990-02-13</bih:dataNascimento>
+            <bih:cnpj>00000000</bih:cnpj>
+            <bih:telefone>319999999</bih:telefone>
+         </pes:pessoa>
+      </pes:resultadoCadastraPessoa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/CadastraPessoa"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="desastivaPessoa" id="9807e4cd-a127-40ff-ac88-ee464582a71d" interface="PessoaServiceSOAP" operation="desastivaPessoa"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="ResponseDesativaPessoa" id="1e805a7b-80a1-466e-b0e4-d7889b5a29d7" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://pucminas.br/SN/PessoaService/DesastivaPessoa"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>]]></con:xml-content>
+</con:xmlEntry>

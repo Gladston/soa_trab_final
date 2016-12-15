@@ -26,5 +26,16 @@
 			</sequence>
 		</complexType>
 	</element>
+	
+	<element name="resultadoParcialVerificaCreditoCliente">
+		<complexType>
+			<sequence>
+				<element name="scoreCreditoExterno" type="integer" />
+				<element name="pessoa" type="cab:Pessoa" />
+				<element name="credito" type="cab:Credito" />
+				<element name="indicaWhiteList" type="boolean" />
+			</sequence>
+		</complexType>
+	</element>
 
 </schema>

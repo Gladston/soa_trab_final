@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:xmlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:xml-content><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="cc51090b-31cb-4724-89b9-fe14cd1e3b85" activeEnvironment="Default" name="SerasaService" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="bdffa1f8-4b1b-4f11-8796-56daa90c55b9" wsaVersion="NONE" name="SerasaServiceSOAP" type="wsdl" bindingName="{http://cursosoa.org/SerasaService/}SerasaServiceSOAP" soapVersion="1_1" anonymous="optional" definition="file:/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/SerasaService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/SerasaService.wsdl"><con:part><con:url>file:/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Contracts/SerasaService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SerasaService" targetNamespace="http://cursosoa.org/SerasaService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tn="http://cursosoa.org/SerasaService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://serasa.com.br/SN/Serasa">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://serasa.com.br/Serasa">
+      <xsd:import namespace="http://serasa.com.br/SN/Serasa" schemaLocation="../Schemas/Serasa.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Serasaequest">
+    <wsdl:part element="ser:ParametrosSerasa" name="ParametrosSerasa"/>
+  </wsdl:message>
+  <wsdl:message name="SerasaResponse">
+    <wsdl:part element="ser:ResultadoSerasa" name="ResultadoSerasa"/>
+  </wsdl:message>
+  <wsdl:portType name="SerasaService">
+    <wsdl:operation name="ConsultarSerasa">
+      <wsdl:input message="tn:Serasaequest"/>
+      <wsdl:output message="tn:SerasaResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SerasaServiceSOAP" type="tn:SerasaService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConsultarSerasa">
+      <soap:operation soapAction="http://cursosoa.org/SerasaService/SerasaService"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SerasaService">
+    <wsdl:port binding="tn:SerasaServiceSOAP" name="SerasaServiceSOAP">
+      <soap:address location="http://cursosoa.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]]]>><![CDATA[</con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:/home/puc/workspace/OSB_Gladston/ServicosNegocio/Credito/Resources/Interfaces/Schemas/Serasa.xsd</con:url><con:content><![CDATA[<schema targetNamespace="http://serasa.com.br/SN/Serasa" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://serasa.com.br/SN/Serasa">
+  <element name="ParametrosSerasa" type="tns:ParametrosSerasa"/>
+  <element name="ResultadoSerasa" type="tns:ResultadoSerasa"/>
+  <complexType name="ParametrosSerasa">
+    <sequence>
+      <element name="num_documento" type="string" minOccurs="1" maxOccurs="1"/>
+      <element name="dt_nascimento" type="date" minOccurs="1" maxOccurs="1"/>
+      <element name="dt_solicitacao" type="date" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+  </complexType>
+  <complexType name="ResultadoSerasa">
+    <sequence>
+      <element name="num_documento" type="string" minOccurs="1" maxOccurs="1"/>
+      <element name="valor_restricao" type="decimal" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+  </complexType>
+</schema>]]]]>><![CDATA[</con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://cursosoa.org/</con:endpoint><con:endpoint>http://puc-VirtualBox:8090/SerasaService</con:endpoint></con:endpoints><con:operation id="d9cf9913-17c1-47ba-9ced-8b303d1c013b" isOneWay="false" action="http://cursosoa.org/SerasaService/SerasaService" name="ConsultarSerasa" bindingOperationName="ConsultarSerasa" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="50e7aa30-e610-4f32-81db-933161787d03" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8090/SerasaService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://serasa.com.br/SN/Serasa">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ParametrosSerasa>
+         <ser:num_documento>?</ser:num_documento>
+         <ser:dt_nascimento>?</ser:dt_nascimento>
+         <ser:dt_solicitacao>?</ser:dt_solicitacao>
+      </ser:ParametrosSerasa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://cursosoa.org/SerasaService/SerasaService"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:mockService id="e2f4ab63-9a9c-42a0-b3ce-0d5a00a49d14" port="8090" path="/SerasaService" host="puc-VirtualBox" name="SerasaServiceSOAP MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ConsultarSerasa" id="6bc38aab-1f39-4fc6-a628-9b2ed0012366" interface="SerasaServiceSOAP" operation="ConsultarSerasa"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="c26500b5-4726-43cc-b73f-67648c3a9219" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://serasa.com.br/SN/Serasa">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ResultadoSerasa>
+         <ser:num_documento>000.000.000-25</ser:num_documento>
+         <ser:valor_restricao>600</ser:valor_restricao>
+      </ser:ResultadoSerasa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://cursosoa.org/SerasaService/SerasaService"/></con:response><con:response name="Response 2" id="ffb7be79-64e7-47ce-95ec-a7ac6435a90b" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://serasa.com.br/SN/Serasa">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:ResultadoSerasa>
+         <ser:num_documento>000.000.000-25</ser:num_documento>
+         <ser:valor_restricao>300</ser:valor_restricao>
+      </ser:ResultadoSerasa>
+   </soapenv:Body>
+</soapenv:Envelope>]]]]>><![CDATA[</con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://cursosoa.org/SerasaService/SerasaService"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>]]></con:xml-content>
+</con:xmlEntry>
