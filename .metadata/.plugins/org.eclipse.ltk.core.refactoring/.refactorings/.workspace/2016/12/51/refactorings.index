@@ -9,3 +9,4 @@
 1481807102721	Delete resource 'OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToCreditoExternoRequest.xq'
 1481807107313	Delete resource 'OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToCreditoInternoRequest.xq'
 1481807117229	Delete resource 'OSB_Gladston/ServicosNegocio/Credito/Resources/Transformations/CreditoGeral/CreditoGeralRequestToWhiteListRequest.xq'
+1481807967973	Delete resource 'OSB_Gladston/ServicosNegocio/Credito/Services/Proxies/CreditoGeralService.proxy'
