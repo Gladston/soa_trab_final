@@ -28,10 +28,15 @@
     </ser:ws-policy>
   </ser:coreEntry>
   <ser:endpointConfig>
-    <tran:provider-id>local</tran:provider-id>
+    <tran:provider-id>http</tran:provider-id>
     <tran:inbound>true</tran:inbound>
+    <tran:URI>
+      <env:value>/OSB_Gladston/ServicosNegocio/Pessoa/Services/Proxies/CadastraPessoaProxyService</env:value>
+    </tran:URI>
     <tran:inbound-properties/>
-    <tran:all-headers>true</tran:all-headers>
+    <tran:provider-specific>
+      <http:inbound-properties/>
+    </tran:provider-specific>
   </ser:endpointConfig>
   <ser:router>
     <con:flow>
