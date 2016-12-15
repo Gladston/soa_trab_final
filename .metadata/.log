@@ -12564,3 +12564,78 @@ java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate par
 
 !ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:00:24.783
 !MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.185
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.239
+!MESSAGE Module not changed:[OSB Configuration Gladston]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.239
+!MESSAGE Found deployable module: com.bea.alsb.core.internal.deployables:OSB Configuration Gladston : bea.alsb.container.module
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.240
+!MESSAGE Module not changed:[OSB Configuration Gladston,OSB_Gladston]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.240
+!MESSAGE Found deployable module: com.bea.alsb.core.internal.deployables:OSB Configuration Gladston : bea.alsb.container.module
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:19:09.240
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.837
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.869
+!MESSAGE Module not changed:[OSB Configuration Gladston]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.871
+!MESSAGE Found deployable module: com.bea.alsb.core.internal.deployables:OSB Configuration Gladston : bea.alsb.container.module
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.871
+!MESSAGE Module changed:[OSB Configuration Gladston,OSB_Gladston]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.872
+!MESSAGE Found deployable module: com.bea.alsb.core.internal.deployables:OSB Configuration Gladston : bea.alsb.container.module
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:48.872
+!MESSAGE Total deleted modules: 0
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:48.911
+!MESSAGE Starting ALSB publish.
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:48.911
+!MESSAGE Added 2 modules out of 2
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.307
+!MESSAGE ALSB Publish Summary: Deleted Projects
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.314
+!MESSAGE No deleted projects to publish.
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.364
+!MESSAGE ALSB Publish Summary: Added/Removed/Changed
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.365
+!MESSAGE Will publish: DesativaPessoaProxyService.proxy
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.365
+!MESSAGE No removed resources to publish.
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:50.481
+!MESSAGE Beginning import to ALSB server.
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:51.629
+!MESSAGE Import to ALSB server completed.
+
+!ENTRY com.bea.alsb.server.publish 1 0 2016-12-15 19:29:51.633
+!MESSAGE ALSB publish finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:51.634
+!MESSAGE Module changed:[OSB Configuration Gladston,OSB_Gladston]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:51.634
+!MESSAGE No Weblogic J2EE module to publish
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-12-15 19:29:51.634
+!MESSAGE Publishing finished.

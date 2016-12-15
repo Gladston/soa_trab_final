@@ -59,7 +59,7 @@
             <con1:schemaElement xmlns:pes="http://pucminas.br/SN/Pessoa">pes:parametrosDesastivaPessoa</con1:schemaElement>
             <con1:varName>body</con1:varName>
             <con1:location>
-              <con2:xpathText>./pes:parametrosDesastivaPessoa</con2:xpathText>
+              <con2:xpathText>./pes:parametrosCadastraPessoa</con2:xpathText>
             </con1:location>
           </con1:validate>
         </con:actions>
